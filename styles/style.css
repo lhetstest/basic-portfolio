@@ -28,7 +28,7 @@ body {
 
 .container {
     margin: 10px auto;
-    max-width: 95%;
+    max-width: 65%;
     background-color: #fff;
     border:1px solid var(--brand-color);
     border-radius: 10px;
