@@ -47,8 +47,7 @@ body {
 }
 
 .img-deco {
-    height: 300px;
-    margin-left: 10px;
+    margin: 10px auto;
 }
 
 @media (max-width: 768px) {
