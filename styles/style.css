@@ -36,6 +36,37 @@ body {
     padding: 20px;
 }
 
+.nav {
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+ul.menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.685);
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.menu a:hover, .menu li.active a{
+    color: var(--brand-color);
+}
+
 .content h2, .project-name {
     font-size: 18px;
     font-weight: 700;
@@ -92,11 +123,16 @@ body {
     margin: 15px auto;
 }
 
-
 @media (max-width: 768px) {
     .container {
         margin: 10px auto;
         max-width: 95%;
+    }
+    .small-logo {
+        max-width: 50px;
+    }
+    .menu {
+        font-size: 14px;
     }
     .btn-brand {
         font-size: 14px;
@@ -116,7 +152,6 @@ body {
         "dictionary"
         "translation";
     }
-
 }
 
 @media (max-width: 568px) {
@@ -125,6 +160,14 @@ body {
     }
     h2 {
         font-size: 18px;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+
+    .menu li {
+        margin-right: 6px;
     }
 
     .btn-brand {
