@@ -35,6 +35,10 @@ body {
     padding: 20px;
 }
 
+.about-section h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
 .block {
     text-align: center;
 }
@@ -49,6 +53,10 @@ body {
 .img-deco {
     margin: 10px auto;
 }
+.portret {
+    display: block;
+    margin: 15px auto;
+}
 
 @media (max-width: 768px) {
     .container {
@@ -56,9 +64,12 @@ body {
         max-width: 95%;
     }
     .btn-brand {
-        text-align: center;
         font-size: 14px;
         padding: 3px;
+    }
+    .about-section a {
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
