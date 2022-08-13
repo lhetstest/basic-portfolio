@@ -1,6 +1,7 @@
 :root {
-    --brand-color: rgb(121, 88, 152);
-    --secondary-color: rgb(182, 143, 219);
+    --brand-color: rgb(139, 100, 175);
+    --background-color:rgb(204, 183, 223);
+    --secondary-color: rgb(166, 127, 202);
     --head-font: 'Playfair Display', serif;
     --body-font: 'Poppins', sans-serif;
 }
@@ -12,7 +13,7 @@
 }
 
 body {
-    background-color: rgb(182, 143, 219);
+    background-color: var(--background-color);
     font-family: var(--body-font);
     font-size: 16px;
 }
@@ -35,10 +36,34 @@ body {
     padding: 20px;
 }
 
-.about-section h2 {
+.content h2, .project-name {
     font-size: 18px;
     font-weight: 700;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "yogurt weather" 
+    "dictionary translation";
+    gap: 8px;
+    text-align: center;
+}
+
+#yogurt {
+    grid-area: yogurt;
+}
+#weather {
+    grid-area: weather;
+}
+#dictionary {
+    grid-area: dictionary;
+}
+#translation {
+    grid-area: translation;
+}
+
 .block {
     text-align: center;
 }
@@ -53,10 +78,12 @@ body {
 .img-deco {
     margin: 10px auto;
 }
-.portret {
+
+.portrait {
     display: block;
     margin: 15px auto;
 }
+
 
 @media (max-width: 768px) {
     .container {
@@ -67,10 +94,25 @@ body {
         font-size: 14px;
         padding: 3px;
     }
-    .about-section a {
+    .container a {
         text-align: center;
         margin: 0 auto;
     }
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .5fr .5fr .5fr;
+        grid-template-areas: 
+        "yogurt"
+        "weather"
+        "dictionary"
+        "translation";
+    }
+
+    .image-w {
+        max-width: ;
+    }
+    
 }
 
 @media (max-width: 568px) {
@@ -82,9 +124,12 @@ body {
     }
 
     .btn-brand {
-        text-align: center;
         font-size: 12px;
         padding: 2px;
     }
 
+    .container a {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
