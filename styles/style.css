@@ -68,6 +68,14 @@ body {
     text-align: center;
 }
 
+.accounts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
 .btn-brand {
     display: block;
     background-color: var(--secondary-color);
