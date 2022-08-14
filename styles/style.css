@@ -1,6 +1,7 @@
 :root {
     --brand-color: rgb(139, 100, 175);
     --background-color:rgb(204, 183, 223);
+    --backlight: rgba(215, 206, 223, 0.8);
     --secondary-color: rgb(166, 127, 202);
     --head-font: 'Playfair Display', serif;
     --body-font: 'Poppins', sans-serif;
@@ -194,8 +195,10 @@ footer a:hover {
         "translation";
     }
     .icons {
-        max-width: 120px;
+        max-width: 200px;
         margin: 10px auto;
+        font-size: 18px;
+
     }
 }
 
@@ -224,4 +227,9 @@ footer a:hover {
         text-align: center;
         margin: 0 auto;
     }
+    .accounts {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
